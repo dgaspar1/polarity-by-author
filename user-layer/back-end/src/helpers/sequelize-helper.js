@@ -17,8 +17,8 @@ module.exports = {
         return this.sequelize.model(name);
     },
 
-    async newCollection(name, schema) {
-        return this.sequelize.define(name, schema);
+    async newCollection(name, collection) {
+        return this.sequelize.define(name, collection.schema, collection.options);
     },
 
     async sync(){

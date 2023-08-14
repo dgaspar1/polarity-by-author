@@ -25,4 +25,5 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(error => {
       console.error('Erro ao obter dados da API:', error);
     });
+    
   });

@@ -1,8 +1,13 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = author = {
-    author: {
-        type: DataTypes.STRING, 
-        allowNull: true
+    schema:{
+        name: {
+            type: DataTypes.STRING,
+            primaryKey: true
+        }
+    },
+    options: {
+        timestamps: false
     }
 };

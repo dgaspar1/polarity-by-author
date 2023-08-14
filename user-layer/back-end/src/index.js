@@ -6,7 +6,7 @@ const TweetsSchema = require('./schemas/tweets');
 
 SequelizeHelper.connect(env.localDataBase, env.user, env.password).then(
     async () => {
-        const Authors = SequelizeHelper.newCollection('Tags', AuthorsSchema);
+        const Authors = SequelizeHelper.newCollection('Authors', AuthorsSchema);
         const Tags = SequelizeHelper.newCollection('Tags', TagsSchema);
         const Tweets = SequelizeHelper.newCollection('Tweets', TweetsSchema);
         await SequelizeHelper.sync();
