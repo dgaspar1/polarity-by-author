@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     var tableBody = document.querySelector('tbody');
-
+    
     function createTableRow(data) {
       var row = document.createElement('tr');
       row.innerHTML = `

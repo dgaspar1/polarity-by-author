@@ -9,31 +9,24 @@
   <div class="container">
     <div class="row">
       <div class="col s6">
+        
         <div class="input-field">
-          <select id="hashtagSelect">
+          <select id="tagSelect" onchange="updateAuthorOptions()">
             <option value="" disabled selected>Selecione uma tag</option>
-            <option value="all">todas</option>
-            <option value="#BolsaFamilia">BolsaFamilia</option>
-            <option value="#MinhaCasaMinhaVida">MinhaCasaMinhaVida</option>
           </select>
-          <label for="hashtagSelect">Tag</label>
+          <label for="tagSelect">Palavra-chave</label>
         </div>
       </div>
-      <div class="col s6">
+        <div class="col s6">
         <div class="input-field">
-          <select id="politicianSelect">
-            <option value="" disabled selected>Selecione um autor</option>
-            <option value="all">todos</option>
-            <option value="Jair Messias Bolsonaro">Jair Messias Bolsonaro</option>
-            <option value="Luiz Inácio Lula da Silva">Luiz Inácio Lula da Silva</option>
-          </select>
-          <label for="politicianSelect">Autor</label>
+          <select id="authorSelect" multiple></select>
+          <label for="authorSelect">Autor</label>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col s12">
-        <button class="btn waves-effect waves-light" id="startButton">Iniciar</button>
+        <button class="btn waves-effect waves-light" id="filterButton">Iniciar</button>
       </div>
     </div>
     <div class="row">
@@ -60,8 +53,9 @@
       </div>
     </div>
   </div>
-  <script src="./scripts/filter.js"></script>
+  <script src="./scripts/selectFields.js"></script>
   <script src="./scripts/tweetsPolarityChart.js"></script>
   <script src="./scripts/tweetsTable.js"></script>
+  <script src="./scripts/filterButton.js"></script>
 </body>
 </html>
